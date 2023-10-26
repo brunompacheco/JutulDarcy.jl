@@ -856,7 +856,6 @@ function setup_case_from_mrst(casename; wells = :ms,
         sym = well_symbols[i]
         wi, wdata, res_cells = get_well_from_mrst_data(mrst_data, sys, i, W_data = first_well_set,
                 extraout = true, well_type = wells, context = w_context, use_lengths = use_well_lengths)
-        param_w = setup_parameters(wi)
 
         sv = wi.secondary_variables
         sv_m = model.secondary_variables
